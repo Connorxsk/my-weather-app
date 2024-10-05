@@ -58,7 +58,7 @@ export async function fetchWeatherData(city: string): Promise<{
     date: `${dayFormat(date)} ${monthFormat(date)}, ${weekdayFormat(
       date
     )} ${hour_minute}`,
-    city: location.name.replace(" ", ""),
+    city: location.name,
     temperature: current.temp_c,
     temp_range: `${data.forecast.forecastday[0].day.mintemp_c}~${data.forecast.forecastday[0].day.maxtemp_c}`,
     icon: current.condition.icon,

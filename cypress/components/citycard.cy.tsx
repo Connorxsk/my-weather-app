@@ -13,7 +13,7 @@ describe("<CityCard />", () => {
 
     cy.contains("Sydney").should("be.visible");
     cy.contains("Shanghai").should("be.visible");
-    cy.contains("NewYork").should("be.visible");
+    cy.contains("New York").should("be.visible");
     cy.contains("London").should("be.visible");
 
     cy.get('[data-testid="cityCard"] .city-card').contains("~");
