@@ -15,7 +15,7 @@ function App() {
     null
   );
   const [weatherForecast, setWeatherForecast] = useState<WeatherForecast[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchCurrentData = async () => {

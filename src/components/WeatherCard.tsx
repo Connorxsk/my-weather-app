@@ -28,10 +28,14 @@ function WeatherCard({ currentData, isLoading }: WeatherCardProps) {
   } = currentData;
 
   return (
-    <div className="weather-card" style={{ backgroundImage: bg_gradient }}>
+    <div
+      className="weather-card"
+      data-testid="weatherCard"
+      style={{ backgroundImage: bg_gradient }}
+    >
       <img src={bg_image} alt={condition} className="bg-image" />
       {isLoading ? (
-        <Spinner />
+        <Spinner data-testid="spinner" />
       ) : (
         <>
           <div className="date">{date}</div>

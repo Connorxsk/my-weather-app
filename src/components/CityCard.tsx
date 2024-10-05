@@ -28,7 +28,7 @@ function CityCard({
   }, []);
 
   return (
-    <div className="cities">
+    <div className="cities" data-testid="cityCard">
       {citiesWeather.map(({ currentWeather }) => {
         const { city, temp_range, icon, condition, bg_gradient } =
           currentWeather;

@@ -16,7 +16,7 @@ function SearchBar({
   }
 
   return (
-    <div className="search-bar">
+    <div className="search-bar" data-testid="searchBar">
       <input
         type="search"
         className="search-input"

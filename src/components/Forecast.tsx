@@ -1,13 +1,9 @@
 import "./all-components.css";
 import type { WeatherForecast } from "../types";
 
-type ForecastProps = {
-  forecastData: WeatherForecast[];
-};
-
-function Forecast({ forecastData }: ForecastProps) {
+function Forecast({ forecastData }: { forecastData: WeatherForecast[] }) {
   return (
-    <div className="forecast">
+    <div className="forecast" data-testid="forecast">
       {forecastData.map(({ weekday, date, icon, condition, temp_range }) => {
         return (
           <div key={date} className="forecast-day">
