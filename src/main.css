@@ -1,5 +1,5 @@
 :root {
-  --bg-image: url(./public/bg/11.png);
+  --bg-image: url(/bg/11.png);
   --primary-color: rgb(59, 129, 243);
   --secondary-color: rgb(138, 177, 252);
   --font-color: rgb(241, 241, 252);
@@ -10,8 +10,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
 }

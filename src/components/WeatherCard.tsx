@@ -33,11 +33,11 @@ function WeatherCard({ currentData, isLoading }: WeatherCardProps) {
       data-testid="weatherCard"
       style={{ backgroundImage: bg_gradient }}
     >
-      <img src={bg_image} alt={condition} className="bg-image" />
       {isLoading ? (
         <Spinner data-testid="spinner" />
       ) : (
         <>
+          <img src={bg_image} alt={condition} className="bg-image" />
           <div className="date">{date}</div>
           <div className="city">{city}</div>
           <div className="temperature">{temperature}°</div>
