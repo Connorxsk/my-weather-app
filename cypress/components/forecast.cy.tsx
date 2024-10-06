@@ -1,9 +1,8 @@
 import Forecast from "../../src/components/Forecast";
-import type { WeatherForecast } from "../../src/types";
 
 describe("<Forecast>", () => {
   it("displays forecast weather", () => {
-    const mockForecastData: WeatherForecast[] = [
+    const mockForecastData = [
       {
         weekday: "Sunday",
         date: "06 October",
