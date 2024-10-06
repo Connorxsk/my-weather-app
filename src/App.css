@@ -1,15 +1,17 @@
 .background {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background: var(--bg-image) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .container {
-  width: 900px;
-  height: 500px;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
   padding: 20px;
   border: none;
   border-radius: 25px;
@@ -17,4 +19,54 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* 手机屏幕下的宽度为100% */
+    height: auto; /* 高度自适应内容 */
+    padding: 10px; /* 减小内边距 */
+    border-radius: 15px; /* 适当减小圆角 */
+    flex-direction: column;
+  }
+
+  .weather-card {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .right-side {
+    width: 100%;
+    height: auto;
+  }
+
+  .forecast-day {
+    height: auto;
+  }
+
+  .forecast-day .weekday {
+    font-size: 12px;
+  }
+
+  .forecast-day img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .search-bar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .cities {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .city-card {
+    width: 48%;
+  }
 }

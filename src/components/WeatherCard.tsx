@@ -51,22 +51,18 @@ function WeatherCard({ currentData, isLoading }: WeatherCardProps) {
           <div className="details">
             <div className="details-icon">
               <img
-                src="../public/meta_icon/humidity.svg"
+                src="/meta_icon/humidity.svg"
                 alt="humidity"
                 title="humidity"
               />
               <img
-                src="../public/meta_icon/wind_speed.svg"
+                src="/meta_icon/wind_speed.svg"
                 alt="wind-speed"
                 title="wind-speed"
               />
+              <img src="/meta_icon/PM2.5.svg" alt="PM2.5" title="PM2.5" />
               <img
-                src="../public/meta_icon/PM2.5.svg"
-                alt="PM2.5"
-                title="PM2.5"
-              />
-              <img
-                src="../public/meta_icon/Somatosensory_temperature.svg"
+                src="/meta_icon/somatosensory_temperature.svg"
                 alt="temp feels like"
                 title="temp feels like"
               />
