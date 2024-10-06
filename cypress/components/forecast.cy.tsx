@@ -35,7 +35,7 @@ describe("<Forecast>", () => {
     ];
     cy.mount(<Forecast forecastData={mockForecastData} />);
 
-    cy.wait(2000);
+    cy.wait(1000);
 
     cy.get('[data-testid="forecast"] .forecast-day').should("have.length", 4);
 

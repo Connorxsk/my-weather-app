@@ -25,5 +25,5 @@
     "types": ["cypress", "node", "@types/jest"]
   },
   "include": ["src", "cypress", "cypress/components"],
-  "exclude": ["node_modules"]
+  "exclude": ["cypress.config.ts", "cypress", "node_modules"]
 }

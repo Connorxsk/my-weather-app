@@ -7,7 +7,7 @@ describe("<CityCard />", () => {
 
     cy.mount(<CityCard setSearchValue={mockSetSearchValue} />);
 
-    cy.wait(2000);
+    cy.wait(1000);
 
     cy.get('[data-testid="cityCard"] .city-card').should("have.length", 4);
 
