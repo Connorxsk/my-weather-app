@@ -10,6 +10,7 @@ collections:
     label: "Property Listings"
     folder: "content/properties"
     create: true
+    format:"json"
     slug: "{{slug}}"
     fields:
       - {
