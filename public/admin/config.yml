@@ -1,0 +1,89 @@
+backend:
+  name: git-gateway
+  branch: main # 或者你的主分支名
+
+media_folder: "static/img/uploads" # 媒体文件将存储的文件夹
+public_folder: "/img/uploads"
+
+collections:
+  - name: "properties"
+    label: "Property Listings"
+    folder: "content/properties"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "Property title or headline",
+        }
+      - {
+          label: "Address",
+          name: "address",
+          widget: "string",
+          hint: "Full address of the property",
+        }
+      - {
+          label: "Price",
+          name: "price",
+          widget: "number",
+          hint: "Listing price of the property",
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          hint: "Detailed description of the property",
+        }
+      - {
+          label: "Bedrooms",
+          name: "bedrooms",
+          widget: "number",
+          hint: "Number of bedrooms",
+        }
+      - {
+          label: "Bathrooms",
+          name: "bathrooms",
+          widget: "number",
+          hint: "Number of bathrooms",
+        }
+      - {
+          label: "Square Feet",
+          name: "square_feet",
+          widget: "number",
+          hint: "Total area in square feet",
+        }
+      - {
+          label: "Main Image",
+          name: "main_image",
+          widget: "image",
+          hint: "Main image of the property",
+        }
+      - {
+          label: "Gallery",
+          name: "gallery",
+          widget: "list",
+          field: { label: "Image", name: "image", widget: "image" },
+          hint: "Upload additional images of the property",
+        }
+      - {
+          label: "Agent",
+          name: "agent",
+          widget: "string",
+          hint: "Agent responsible for this property",
+        }
+      - {
+          label: "Date Listed",
+          name: "date_listed",
+          widget: "datetime",
+          hint: "When the property was listed",
+        }
+      - {
+          label: "Status",
+          name: "status",
+          widget: "select",
+          options: ["Available", "Pending", "Sold"],
+          default: "Available",
+          hint: "Current status of the listing",
+        }
