@@ -1,0 +1,16 @@
+{
+  "agent": "Ruby",
+  "bathrooms": 1,
+  "price": 1000000,
+  "date_listed": "2024-10-20T22:02:00.000Z",
+  "square_feet": 150,
+  "gallery": [
+    "/img/uploads/humidity.svg"
+  ],
+  "status": "Available",
+  "address": "Small house at the corner Melbourne",
+  "main_image": "/img/uploads/shanghai.png",
+  "bedrooms": 1,
+  "title": "Small House",
+  "description": "nice house"
+}
