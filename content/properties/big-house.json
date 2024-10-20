@@ -1,16 +1,16 @@
 {
-  "agent": "Ruby",
-  "bathrooms": 2,
-  "price": 2000000,
-  "date_listed": "2024-10-20T21:57:00.000Z",
-  "square_feet": 200,
+  "agent": "Sharon",
+  "bathrooms": 3,
+  "price": 3000000,
+  "date_listed": "2024-10-20T21:58:00.000Z",
+  "square_feet": 300,
   "gallery": [
-    "/img/uploads/humidity.svg"
+    "/img/uploads/wind_speed.svg"
   ],
   "status": "Available",
-  "address": "Big house in the street Melbourne",
-  "main_image": "/img/uploads/london.png",
-  "bedrooms": 2,
-  "title": "Big House",
+  "address": "Small house on the street Melbourne",
+  "main_image": "/img/uploads/new-york.png",
+  "bedrooms": 3,
+  "title": "Small House",
   "description": "Good house"
 }
