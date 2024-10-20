@@ -1,0 +1,16 @@
+{
+  "agent": "Ruby",
+  "bathrooms": 2,
+  "price": 2000000,
+  "date_listed": "2024-10-20T21:57:00.000Z",
+  "square_feet": 200,
+  "gallery": [
+    "/img/uploads/humidity.svg"
+  ],
+  "status": "Available",
+  "address": "Big house in the street Melbourne",
+  "main_image": "/img/uploads/london.png",
+  "bedrooms": 2,
+  "title": "Big House",
+  "description": "Good house"
+}
