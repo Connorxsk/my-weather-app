@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main # 或者你的主分支名
 
-media_folder: "static/img/uploads" # 媒体文件将存储的文件夹
+media_folder: "public/static/img/uploads" # 媒体文件将存储的文件夹
 public_folder: "/img/uploads"
 
 collections:
