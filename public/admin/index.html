@@ -13,17 +13,32 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      // 初始化 Netlify Identity
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          // 如果用户未登录，监听登录事件并重定向到 /admin
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
+      document.addEventListener("DOMContentLoaded", function () {
+        // 检查 Netlify Identity Widget 是否加载成功
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              // 自动处理邀请 token 或恢复 token
+              const hash = document.location.hash;
+              if (
+                hash.includes("invite_token") ||
+                hash.includes("recovery_token")
+              ) {
+                // 打开 Netlify Identity 小部件，显示恢复或邀请界面
+                netlifyIdentity.open();
+              }
+
+              // 登录事件触发后，重定向到 /admin 页面
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+
+          // 初始化身份验证小部件
+          window.netlifyIdentity.init();
+        }
+      });
     </script>
   </body>
 </html>
